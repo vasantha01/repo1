@@ -12,6 +12,6 @@
             post_build:
               commands:
                 - echo source code to s3
-                - zip folder1/folder1.zip folder1
+                - zip folder1.zip folder1
                 - aws s3 cp --recursive folder1 s3://ranibucket2/folder1.zip
        
